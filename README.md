@@ -71,6 +71,8 @@ These are the commands you need to type in a terminal if you want to use pip to 
 First you need to make sure you have the latest version of pip installed:
 
     $ pip3 install --user --upgrade pip
+    $ pip3 install pandas
+    $ pip3 install sklearn
 
 The `--user` option will install the latest version of pip only for the current user. If you prefer to install it system wide (i.e. for all users), you must have administrator rights (e.g. use `sudo pip3` instead of `pip3` on Linux), and you should remove the `--user` option. The same is true of the command below that uses the `--user` option.
 
@@ -87,7 +89,7 @@ Now you must activate this environment. You will need to run this command every 
 
 Next, use pip to install the required python packages. If you are not using virtualenv, you should add the `--user` option (alternatively you could install the libraries system-wide, but this will probably require administrator rights, e.g. using `sudo pip3` instead of `pip3` on Linux).
 
-    $ pip3 install --upgrade -r requirements.txt
+    (env)handson-ml$ sudo pip3 install --upgrade -r requirements.txt
 
 Great! You're all set, you just need to start Jupyter now.
 
